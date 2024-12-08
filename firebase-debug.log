@@ -1,0 +1,93 @@
+[debug] [2024-12-08T02:47:22.158Z] ----------------------------------------------------------------------
+[debug] [2024-12-08T02:47:22.160Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Husnain\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --debug
+[debug] [2024-12-08T02:47:22.161Z] CLI Version:   13.28.0
+[debug] [2024-12-08T02:47:22.161Z] Platform:      win32
+[debug] [2024-12-08T02:47:22.161Z] Node Version:  v18.20.5
+[debug] [2024-12-08T02:47:22.162Z] Time:          Sun Dec 08 2024 07:47:22 GMT+0500 (Pakistan Standard Time)
+[debug] [2024-12-08T02:47:22.163Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-08T02:47:22.321Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-08T02:47:22.324Z] > authorizing via signed-in user (husnain.raza.dev@gmail.com)
+[debug] [2024-12-08T02:47:22.325Z] [iam] checking project react-with-firebase-8390f for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-12-08T02:47:22.328Z] Checked if tokens are valid: true, expires at: 1733627619822
+[debug] [2024-12-08T02:47:22.329Z] Checked if tokens are valid: true, expires at: 1733627619822
+[debug] [2024-12-08T02:47:22.337Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-with-firebase-8390f:testIamPermissions [none]
+[debug] [2024-12-08T02:47:22.351Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-with-firebase-8390f:testIamPermissions x-goog-quota-user=projects/react-with-firebase-8390f
+[debug] [2024-12-08T02:47:22.356Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-with-firebase-8390f:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-08T02:47:23.879Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-with-firebase-8390f:testIamPermissions 200
+[debug] [2024-12-08T02:47:23.882Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-with-firebase-8390f:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-08T02:47:23.888Z] Checked if tokens are valid: true, expires at: 1733627619822
+[debug] [2024-12-08T02:47:23.890Z] Checked if tokens are valid: true, expires at: 1733627619822
+[debug] [2024-12-08T02:47:23.895Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/react-with-firebase-8390f [none]
+[debug] [2024-12-08T02:47:24.392Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/react-with-firebase-8390f 200
+[debug] [2024-12-08T02:47:24.395Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/react-with-firebase-8390f {"projectId":"react-with-firebase-8390f","projectNumber":"990540733906","displayName":"react-with-firebase","name":"projects/react-with-firebase-8390f","resources":{"hostingSite":"react-with-firebase-8390f"},"state":"ACTIVE","etag":"1_a8475bce-1fc6-41c6-98bc-c7f848dd72f1"}
+[info] 
+[info] === Deploying to 'react-with-firebase-8390f'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-12-08T02:47:24.439Z] Checked if tokens are valid: true, expires at: 1733627619822
+[debug] [2024-12-08T02:47:24.440Z] Checked if tokens are valid: true, expires at: 1733627619822
+[debug] [2024-12-08T02:47:24.441Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/react-with-firebase-8390f/versions [none]
+[debug] [2024-12-08T02:47:24.442Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/react-with-firebase-8390f/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-12-08T02:47:26.789Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/react-with-firebase-8390f/versions 200
+[debug] [2024-12-08T02:47:26.791Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/react-with-firebase-8390f/versions {"name":"projects/990540733906/sites/react-with-firebase-8390f/versions/f258287c2dc84780","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[react-with-firebase-8390f]: beginning deploy... 
+[info] i  hosting[react-with-firebase-8390f]: found 5 files in build 
+[debug] [2024-12-08T02:47:26.842Z] [hosting] uploading with 200 concurrency
+[debug] [2024-12-08T02:47:26.847Z] Checked if tokens are valid: true, expires at: 1733627619822
+[debug] [2024-12-08T02:47:26.848Z] Checked if tokens are valid: true, expires at: 1733627619822
+[debug] [2024-12-08T02:47:26.853Z] [hosting] hash cache [YnVpbGQ] stored for 5 files
+[debug] [2024-12-08T02:47:26.854Z] [hosting][hash queue][FINAL] {"max":2,"min":1,"avg":1,"active":0,"complete":5,"success":5,"errored":0,"retried":0,"total":5,"elapsed":10}
+[debug] [2024-12-08T02:47:26.856Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/990540733906/sites/react-with-firebase-8390f/versions/f258287c2dc84780:populateFiles [none]
+[debug] [2024-12-08T02:47:26.856Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/990540733906/sites/react-with-firebase-8390f/versions/f258287c2dc84780:populateFiles {"files":{"/index.html":"b2f9b098f9e10844a4985f5ff397adcca35bdceb517b4f12c2d9790d43773623","/asset-manifest.json":"65d4784383b58a457561c96442a4ab58f3d274d46c08165ffd164fe7199b1b56","/static/js/main.8963f508.js.map":"83d871acb6e78b6259cf58d73c62bf9dff71e55b7730e865a277c2f15db72459","/static/js/main.8963f508.js.LICENSE.txt":"b66096bc0aff35730d07b1276c55f0fb447bf3b2fb7350efa7660b2a5145f6f1","/static/js/main.8963f508.js":"93d24eceea5bcc108a3bf6710bf12f00c9b0bed2d11ca4766c87a71ead602cc0"}}
+[debug] [2024-12-08T02:47:28.722Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/990540733906/sites/react-with-firebase-8390f/versions/f258287c2dc84780:populateFiles 200
+[debug] [2024-12-08T02:47:28.724Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/990540733906/sites/react-with-firebase-8390f/versions/f258287c2dc84780:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/react-with-firebase-8390f/versions/f258287c2dc84780/files"}
+[debug] [2024-12-08T02:47:28.729Z] [hosting][populate queue][FINAL] {"max":1883,"min":1883,"avg":1883,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1883}
+[debug] [2024-12-08T02:47:28.732Z] [hosting] uploads queued: 0
+[debug] [2024-12-08T02:47:28.735Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1733626048735}
+[info] i  hosting: upload complete 
+[info] +  hosting[react-with-firebase-8390f]: file upload complete 
+[debug] [2024-12-08T02:47:28.746Z] [hosting] deploy completed after 1946ms
+[debug] [2024-12-08T02:47:28.748Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "react-with-firebase-8390f"
+    },
+    "version": "projects/990540733906/sites/react-with-firebase-8390f/versions/f258287c2dc84780"
+  }
+]
+[info] i  hosting[react-with-firebase-8390f]: finalizing version... 
+[debug] [2024-12-08T02:47:28.761Z] Checked if tokens are valid: true, expires at: 1733627619822
+[debug] [2024-12-08T02:47:28.762Z] Checked if tokens are valid: true, expires at: 1733627619822
+[debug] [2024-12-08T02:47:28.770Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/react-with-firebase-8390f/versions/f258287c2dc84780 updateMask=status%2Cconfig
+[debug] [2024-12-08T02:47:28.771Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/react-with-firebase-8390f/versions/f258287c2dc84780 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2024-12-08T02:47:30.839Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/react-with-firebase-8390f/versions/f258287c2dc84780 200
+[debug] [2024-12-08T02:47:30.841Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/react-with-firebase-8390f/versions/f258287c2dc84780 {"name":"projects/990540733906/sites/react-with-firebase-8390f/versions/f258287c2dc84780","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2024-12-08T02:47:26.117570Z","createUser":{"email":"husnain.raza.dev@gmail.com"},"finalizeTime":"2024-12-08T02:47:30.639671Z","finalizeUser":{"email":"husnain.raza.dev@gmail.com"}}
+[debug] [2024-12-08T02:47:30.847Z] [hosting] finalized version for react-with-firebase-8390f:[object Object]
+[info] +  hosting[react-with-firebase-8390f]: version finalized 
+[info] i  hosting[react-with-firebase-8390f]: releasing new version... 
+[debug] [2024-12-08T02:47:30.855Z] Checked if tokens are valid: true, expires at: 1733627619822
+[debug] [2024-12-08T02:47:30.858Z] Checked if tokens are valid: true, expires at: 1733627619822
+[debug] [2024-12-08T02:47:30.860Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/react-with-firebase-8390f/channels/live/releases versionName=projects%2F990540733906%2Fsites%2Freact-with-firebase-8390f%2Fversions%2Ff258287c2dc84780
+[debug] [2024-12-08T02:47:30.862Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/react-with-firebase-8390f/channels/live/releases {}
+[debug] [2024-12-08T02:47:32.853Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/react-with-firebase-8390f/channels/live/releases 200
+[debug] [2024-12-08T02:47:32.856Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/react-with-firebase-8390f/channels/live/releases {"name":"projects/990540733906/sites/react-with-firebase-8390f/channels/live/releases/1733626051965000","version":{"name":"projects/990540733906/sites/react-with-firebase-8390f/versions/f258287c2dc84780","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2024-12-08T02:47:26.117570Z","createUser":{"email":"husnain.raza.dev@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocK0_5vRk-jny_0HGnmGakHgLkU39A-EP0EBfnYtWdddCe6XYg=mo"},"finalizeTime":"2024-12-08T02:47:30.639671Z","finalizeUser":{"email":"husnain.raza.dev@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocK0_5vRk-jny_0HGnmGakHgLkU39A-EP0EBfnYtWdddCe6XYg=mo"}},"type":"DEPLOY","releaseTime":"2024-12-08T02:47:31.965Z","releaseUser":{"email":"husnain.raza.dev@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocK0_5vRk-jny_0HGnmGakHgLkU39A-EP0EBfnYtWdddCe6XYg=mo"}}
+[debug] [2024-12-08T02:47:32.865Z] [hosting] release: {"name":"projects/990540733906/sites/react-with-firebase-8390f/channels/live/releases/1733626051965000","version":{"name":"projects/990540733906/sites/react-with-firebase-8390f/versions/f258287c2dc84780","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2024-12-08T02:47:26.117570Z","createUser":{"email":"husnain.raza.dev@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocK0_5vRk-jny_0HGnmGakHgLkU39A-EP0EBfnYtWdddCe6XYg=mo"},"finalizeTime":"2024-12-08T02:47:30.639671Z","finalizeUser":{"email":"husnain.raza.dev@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocK0_5vRk-jny_0HGnmGakHgLkU39A-EP0EBfnYtWdddCe6XYg=mo"}},"type":"DEPLOY","releaseTime":"2024-12-08T02:47:31.965Z","releaseUser":{"email":"husnain.raza.dev@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocK0_5vRk-jny_0HGnmGakHgLkU39A-EP0EBfnYtWdddCe6XYg=mo"}}
+[info] +  hosting[react-with-firebase-8390f]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/react-with-firebase-8390f/overview
+[info] Hosting URL: https://react-with-firebase-8390f.web.app
